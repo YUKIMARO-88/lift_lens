@@ -1,0 +1,17 @@
+{
+  "name": "Lift Lens - 筋トレ動画ログ",
+  "short_name": "Lift Lens",
+  "description": "筋トレ動画を読み込むだけで、回数・余力・消費カロリー・筋肥大刺激を自動で記録",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0d0e10",
+  "theme_color": "#0d0e10",
+  "lang": "ja",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

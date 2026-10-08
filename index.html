@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lift Lens</title>
+<meta name="description" content="筋トレ動画を読み込むだけで、回数・余力・消費カロリー・筋肥大刺激を自動で記録">
+<meta name="theme-color" content="#0d0e10">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Lift Lens">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <button id="prevDay" class="nav-btn" aria-label="前の日">‹</button>
+  <div class="date-box"><div id="dateLabel" class="date-label"></div><div id="dateSub" class="date-sub"></div></div>
+  <button id="nextDay" class="nav-btn" aria-label="次の日">›</button>
+</header>
+
+<main id="main"></main>
+
+<input id="fileInput" type="file" accept="video/*" multiple hidden>
+
+<nav class="tabs">
+  <button data-view="day" class="on"><span class="ti">◉</span>記録</button>
+  <button data-view="week"><span class="ti">▥</span>今週</button>
+  <button data-view="ex"><span class="ti">↗</span>種目</button>
+  <button data-view="settings"><span class="ti">⚙</span>設定</button>
+</nav>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="reps.js"></script>
+<script src="calc.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
